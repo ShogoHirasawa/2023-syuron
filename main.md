@@ -347,10 +347,23 @@ dnsmasq は、ネットワーク上のデバイスに対して DNS サーバー�
 （表1 First Contentful Paint（FCP）、Largest Contentful Paint（LCP）、Time to Interactive（TTI）の評価表 ）
 </p>
 
-本検証を行うにあたり、図 25 の環境で計測を行った。Raspberry Pi4 に給電を行い、イントラネット内で 3 台のスマートフォンと 1 台のラップトップ PC にハザードマップを配信している状態での計測を行った。なお、Raspberry Pi4 と 4 台のデバイスは 1.7m の距離を保った状態で計測した。本計測は、夫婦と未婚の子供 2 人の核家族世帯が避難する場面で、計 4 台デバイスで接続することを想定している。計測はラップトップ PC（MacBook Pro 13-inch, M1, 2020 チップ Apple M1 メモリ 16 GB macOS Ventura 13.3.1 ）上で Google Chrome（119.0.6045.199（Official Build） （arm64））の Performance Insights の機能を用いて計測した。Performance Insights はネットワークの接続状況と利用する CPU の性能を予め設定した上で FCP、LCP、TTI の計測を行える。これらを設定することにより、任意の接続環境及び CPU スペックを指定して値を出すことができる。本検証では、Raspberry Pi 4 のネットワークを利用する際に特に設定を加える必要はないため、ネットワークスロットリングは Nothing で設定した。次いで、CPU ストロットリングの値を 4 x slowdown に設定した。これは計測器であるラップトップ PC が保有する CPU の 1/4 のスペックで計測することを意味する。一般的にスマートフォンの CPU はラップトップ PC より性能が劣ることが多いため、本検証では 1/4 のスペックを設定した（図 26）
+本検証を行うにあたり、図 24 の環境で計測を行った。Raspberry Pi4 に給電を行い、イントラネット内で 3 台のスマートフォンと 1 台のラップトップ PC にハザードマップを配信している状態での計測を行った。なお、Raspberry Pi4 と 4 台のデバイスは 1.7m の距離を保った状態で計測した。本計測は、夫婦と未婚の子供 2 人の核家族世帯が避難する場面で、計 4 台デバイスで接続することを想定している。計測はラップトップ PC（MacBook Pro 13-inch, M1, 2020 チップ Apple M1 メモリ 16 GB macOS Ventura 13.3.1 ）上で Google Chrome（119.0.6045.199（Official Build） （arm64））の Performance Insights の機能を用いて計測した。Performance Insights はネットワークの接続状況と利用する CPU の性能を予め設定した上で FCP、LCP、TTI の計測を行える。これらを設定することにより、任意の接続環境及び CPU スペックを指定して値を出すことができる。本検証では、Raspberry Pi 4 のネットワークを利用する際に特に設定を加える必要はないため、ネットワークスロットリングは Nothing で設定した。次いで、CPU ストロットリングの値を 4 x slowdown に設定した。これは計測器であるラップトップ PC が保有する CPU の 1/4 のスペックで計測することを意味する。一般的にスマートフォンの CPU はラップトップ PC より性能が劣ることが多いため、本検証では 1/4 のスペックを設定した（図 25）
 
-（図 25 検証環境の概略図）
+<p align="center">
+<img width="600" alt="image" src="https://github.com/ShogoHirasawa/2023-syuron/assets/29940264/42694701-6ba8-421c-9857-7f86381a8084">
+</p>
+
+<p align="center">
+（図 24 検証環境の概略図）
+</p>
+
+<p align="center">
+<img width="600" alt="image" src="https://github.com/ShogoHirasawa/2023-syuron/assets/29940264/e4e69b89-fa90-42dc-be65-969007793663">
+</p>
+
+<p align="center">
 （図 26 ネットワークスロットリングと CPU ストロットリングの設定）
+</p>
 
 上記の条件で計測を行った結果、FCP 0.53 秒、LCP 0.53 秒、TTI 1.66 秒の値を示した（図 27）。これは各種指標において最上位のステータスに分類される値であり、オフライン環境下でも高い Web パフォーマンスでハザードマップを配信できることが確かめられた。このことから、本システムはオフライン環境下であっても、十分な速度でハザードマップを表示できることが示せた。
 

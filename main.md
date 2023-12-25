@@ -145,7 +145,7 @@ Google Maps と MAPS.ME ともにインターネット接続が困難な状態�
 本節では、本システムの概要について論じる。本研究では、低コストでありながら高い汎用性と拡張性を持つマイクロコンピューターである Raspberry Pi4 を用いた地図サーバーの構築を試みた（図 7）。
 
 <p align="center">
-![image](https://github.com/ShogoHirasawa/2023-syuron/assets/29940264/e55dc483-93a7-41d6-8929-b7f43f4b37b4)
+  <img width="600" alt="image" src="https://github.com/ShogoHirasawa/2023-syuron/assets/29940264/e22dd171-40fe-4226-9aed-2455d09a76ee">
 </p>
 
 <p align="center">

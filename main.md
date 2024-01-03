@@ -545,7 +545,7 @@ Raspberry Pi 4 を基盤とした、ハザードマップをイントラネッ�
 危険地帯を考慮したルーティングシステムの構築に関しては、既往事例を援用することで実装が可能であると考える。国土交通省（2023）では洪水災害時の浸水地帯を避けるルーティングシステムを構築を実現させた。この事例ではOpenStreetMapの道路ネットワークデータとPostgreSQLデータベースの拡張機能であるpgRoutingを用いて、浸水域を避けるルート検索機能を実装している（図34）。
 
 <p align="center">
-
+<img width="600" alt="image" src="https://github.com/ShogoHirasawa/2023-syuron/assets/29940264/55aecd98-a21d-439d-a693-e6361a373af6">  
 </p>
 
 <p align="center">

@@ -155,7 +155,7 @@ Google MapsとMAPS.MEともにインターネット接続が困難な状態で�
 </p>
 
 <palign="center">
-（図7Raspberry Pi 4ModelB本体画像．RaspberryPi公式Webページ『BuyaRaspberry Pi 4ModelB–RaspberryPi』から引用．URL:https://www．raspberrypi．com/products/raspberry-pi-4-model-b/）
+（図7Raspberry Pi 4ModelB本体画像．RaspberryPi公式Webページ『BuyaRaspberry Pi 4ModelB–RaspberryPi』から引用．URL:https://www.raspberrypi.com/products/raspberry-pi-4-model-b/）
 </p>
 
 RaspberryPiは，教育や研究，趣味のプロジェクトなど，多岐にわたる分野で使用されているマイクロコンピューターである（RaspberryPiFoundation，2021）．各種ソフトウェアをRaspberry Pi 4にダウンロードし，アクセスポイントとして機能させることにより，Raspberry Pi 4を基点としたイントラネットを構築し，オフライン環境下でもスマートフォンを通じてアクセス可能な地図サーバーとしての役割を果たすよう設定した．アクセスポイントとは，ワイヤレスネットワークにおけるデバイス間の通信を仲介する装置のことを指す．Raspberry Pi 4のアクセスポイント化に関する具体的な実装方法は「3．2．1．Raspberry Pi 4を用いたWebハザードマップ配信システム」で述べる．利用者はRaspberry Pi 4のイントラネットにアクセスすることで，オフライン環境下であってもスマートフォンのブラウザアプリケーション上で洪水ハザードマップを閲覧することができる．また，洪水災害時の避難時における本システムの持ち運び性能を上げるために，3Dプリンターを用いてハードカバーを作成した．図5の通り，Raspberry Pi 4単体だと基盤がむき出しの状態であり持ち運びには適していない．そこで，Webサイト「きっと何かに役立つでしょ！？」においてCCBY-NC-SA4．0ライセンス下でstl形式で公開されているRaspberry Pi 4のケースのデータを活用した（2020，きっと何かに役立つでしょ！？）．上記のデータを用いて3Dプリンタでケースを作成し，Raspberry Pi 4を持ち運びしやすい形にした（図8）．
@@ -537,7 +537,7 @@ Raspberry Pi 4を基盤とした，ハザードマップをイントラネット
 </p>
 
 <palign="center">
-（図35ProjectPLATEAU（国土交通省）『高度な浸水シミュレーション』から引用（URL:https://www．mlit．go．jp/plateau/use-case/uc22-009/））
+（図35ProjectPLATEAU（国土交通省）『高度な浸水シミュレーション』から引用（URL:https://www.mlit．go．jp/plateau/use-case/uc22-009/））
 </p>
 
 本事例の検証結果によると，利用者が流速を考慮して経路検討を行うことが可能になったと示されている．将来的な研究では，この可視化手法を加えることで，より高度な流水速度の表現が可能となるであろう．本研究を素地に流水の表現を改良することで，避難者に対して低地，傾斜地のみならず流水速度の認識を促すことができると考える．
@@ -553,7 +553,7 @@ Raspberry Pi 4を基盤とした，ハザードマップをイントラネット
 </p>
 
 <palign="center">
-（図36ProjectPLATEAU（国土交通省）『住民個人の避難行動立案支援ツール』から引用（URL:https://www．mlit．go．jp/plateau/use-case/uc22-041/）
+（図36ProjectPLATEAU（国土交通省）『住民個人の避難行動立案支援ツール』から引用（URL:https://www.mlit．go．jp/plateau/use-case/uc22-041/）
 </p>
 
 Raspberry Pi 4上にOpenStreetMapの道路ネットワークデータベースをPostgreSQLで構築し，pgRoutingを稼働させることで本システム上で稼働する危険地帯を避けるルーティング機能を実装が行えると考える．

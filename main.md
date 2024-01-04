@@ -155,10 +155,10 @@ Google MapsとMAPS.MEともにインターネット接続が困難な状態で�
 </p>
 
 <palign="center">
-（図7Raspberry Pi 4ModelB本体画像．RaspberryPi公式Webページ『BuyaRaspberry Pi 4ModelB–RaspberryPi』から引用．URL:https://www.raspberrypi.com/products/raspberry-pi-4-model-b/）
+（図7Raspberry Pi 4ModelB本体画像．Raspberry Pi公式Webページ『BuyaRaspberry Pi 4ModelB–Raspberry Pi』から引用．URL:https://www.raspberrypi.com/products/raspberry-pi-4-model-b/）
 </p>
 
-RaspberryPiは，教育や研究，趣味のプロジェクトなど，多岐にわたる分野で使用されているマイクロコンピューターである（RaspberryPiFoundation，2021）．各種ソフトウェアをRaspberry Pi 4にダウンロードし，アクセスポイントとして機能させることにより，Raspberry Pi 4を基点としたイントラネットを構築し，オフライン環境下でもスマートフォンを通じてアクセス可能な地図サーバーとしての役割を果たすよう設定した．アクセスポイントとは，ワイヤレスネットワークにおけるデバイス間の通信を仲介する装置のことを指す．Raspberry Pi 4のアクセスポイント化に関する具体的な実装方法は「3．2．1．Raspberry Pi 4を用いたWebハザードマップ配信システム」で述べる．利用者はRaspberry Pi 4のイントラネットにアクセスすることで，オフライン環境下であってもスマートフォンのブラウザアプリケーション上で洪水ハザードマップを閲覧することができる．また，洪水災害時の避難時における本システムの持ち運び性能を上げるために，3Dプリンターを用いてハードカバーを作成した．図5の通り，Raspberry Pi 4単体だと基盤がむき出しの状態であり持ち運びには適していない．そこで，Webサイト「きっと何かに役立つでしょ！？」においてCCBY-NC-SA4．0ライセンス下でstl形式で公開されているRaspberry Pi 4のケースのデータを活用した（2020，きっと何かに役立つでしょ！？）．上記のデータを用いて3Dプリンタでケースを作成し，Raspberry Pi 4を持ち運びしやすい形にした（図8）．
+Raspberry Piは，教育や研究，趣味のプロジェクトなど，多岐にわたる分野で使用されているマイクロコンピューターである（Raspberry PiFoundation，2021）．各種ソフトウェアをRaspberry Pi 4にダウンロードし，アクセスポイントとして機能させることにより，Raspberry Pi 4を基点としたイントラネットを構築し，オフライン環境下でもスマートフォンを通じてアクセス可能な地図サーバーとしての役割を果たすよう設定した．アクセスポイントとは，ワイヤレスネットワークにおけるデバイス間の通信を仲介する装置のことを指す．Raspberry Pi 4のアクセスポイント化に関する具体的な実装方法は「3．2．1．Raspberry Pi 4を用いたWebハザードマップ配信システム」で述べる．利用者はRaspberry Pi 4のイントラネットにアクセスすることで，オフライン環境下であってもスマートフォンのブラウザアプリケーション上で洪水ハザードマップを閲覧することができる．また，洪水災害時の避難時における本システムの持ち運び性能を上げるために，3Dプリンターを用いてハードカバーを作成した．図5の通り，Raspberry Pi 4単体だと基盤がむき出しの状態であり持ち運びには適していない．そこで，Webサイト「きっと何かに役立つでしょ！？」においてCCBY-NC-SA4．0ライセンス下でstl形式で公開されているRaspberry Pi 4のケースのデータを活用した（2020，きっと何かに役立つでしょ！？）．上記のデータを用いて3Dプリンタでケースを作成し，Raspberry Pi 4を持ち運びしやすい形にした（図8）．
 
 <palign="center">
 <imgwidth="600"alt="image"src="https://github.com/ShogoHirasawa/2023-syuron/assets/29940264/01ed58df-27fd-4c93-b80f-44a7636889e6">
@@ -218,7 +218,7 @@ Raspberry Pi 4を稼働させるため，モバイルバッテリーを用いた
 
 ####3．1．3．Raspberry Pi 4を用いたWebハザードマップ配信システム
 
-本節では，Raspberry Pi 4を基調に構築した，オフライン環境下でのハザードマップを配信するシステムについて述べる．はじめに，本システムに利用したRaspberryPiOSについて述べ，最後にRaspberry Pi 4をアクセスポイント化及びWebサーバー化させた実装について論じる．Raspberry Pi 4はOSがインストールされたSDカードをRaspberry Pi 4本体に差し込むことで稼働させることができる．RaspberryPiのOSはRaspberryPi財団が公式でリリースしている「RaspberryPiImager」を用いることでインストールすることができる．本研究では，"RaspbianGNU/Linux11(bullseye)"をOSとして採用した（図14）．
+本節では，Raspberry Pi 4を基調に構築した，オフライン環境下でのハザードマップを配信するシステムについて述べる．はじめに，本システムに利用したRaspberry PiOSについて述べ，最後にRaspberry Pi 4をアクセスポイント化及びWebサーバー化させた実装について論じる．Raspberry Pi 4はOSがインストールされたSDカードをRaspberry Pi 4本体に差し込むことで稼働させることができる．Raspberry PiのOSはRaspberry Pi財団が公式でリリースしている「Raspberry PiImager」を用いることでインストールすることができる．本研究では，"RaspbianGNU/Linux11(bullseye)"をOSとして採用した（図14）．
 
 <palign="center">
 <imgwidth="600"alt="image"src="https://github.com/ShogoHirasawa/2023-syuron/assets/29940264/1f99a40c-6573-4ede-81c2-67902892e141">
